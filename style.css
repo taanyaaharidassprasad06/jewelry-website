@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EAE7E2;
+    font-family:monospace;
+    margin-top: 3rem;
+}
+
+/* ---------- HOMEPAGE ---------- */
+
+/* header */
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 25%;
+}
+
+/* navigation menu */
+.navbar {
+    margin: 4rem 0 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* -- navbar products dropdown -- */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: white;
+    display: none; /* hides dropdown intially */
+    padding: 1rem 0 1rem 1rem;
+    position: absolute;
+    z-index: 1; /* stacks dropdown ontop of other elements -> higher z value elements will appear ontop of lower z value elements */
+}
+
+.dropdown-col {
+    display: flex;
+    flex-direction: column; /* displays each nav link verticically */
+}
+
+.dropdown-link {
+    color: black;
+    padding: 0.5rem 5rem 0 0;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: center;
+    min-width: 350px;
+    text-align: center;
+}
+
+.dropdown-link:hover {
+    text-decoration: underline;
+}
+
+/* video background */
+.video-container {
+    height: 650px; /* height of video container div */
+    width: 100%; /* makes the video container div span the full width of the page */
+    margin-top: 2rem;
+}
+
+.video-bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -- promotion sale -- */
+.sale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 7rem 4rem;
+}
+
+.storefront-sale-img {
+    flex: 1;
+    max-width: 600px;
+    width: 75%;
+}
+
+.sale-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+}
+
+.sale-percent {
+    color: rgb(250, 63, 63);
+    text-decoration: underline overline;
+}
+
+.message {
+    font-size: 4rem;
+}
+
+/* -- product about cards -- */
+.home-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.home-card {
+    background-color: whitesmoke;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center; /* shift elements vertically */
+    align-items: center; /* shift elements horizontally */
+    margin: 1rem;
+    padding: 2rem;
+    height: 400px;
+    position: relative;
+    text-align: center;  
+}
+
+.home-card-img {
+    height: 300px;
+    width: 300px;
+    margin: 2rem 0 1rem;
+    object-fit: cover; /* allows image to fill container by cropping it to fit -> avoids img stretching */ 
+}
+
+.home-card-text {
+    margin-top: 1rem;
+}
+
+.home-card:hover .home-card-img, .home-card:hover .home-card-title {
+    visibility: hidden;
+}
+
+.home-card:hover .home-card-text {
+    font-size: 1.1rem;
+    margin-top: 0;
+    position: absolute; /* removes element from normal document flow -- allows to position anywhere */
+    top: 50%; /* positions top edge 50% from top of the parent */
+    left: 50%; /* positions left edge 50% from left of the parent -- both top and left help shift top-left corner of element to center inside parent element */
+    transform: translate(-50%, -50%); /* shifts element back by 50% its own width and height to help center element inside parent */
+    width: calc(100% - 4rem); 
+}
+
+/* newsletter form */
+.newsletter {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;  
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.form-title {
+    font-size: 3rem;
+}
+
+.field {
+    font-family: monospace;
+    margin: 1rem 0 2rem;
+    width: 50rem;
+    padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .form-title {
+        font-size: 2.5rem;
+    }
+    
+    .field {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-title {
+        font-size: 1.7rem;
+    }
+    
+    .field {
+        width: 25rem;
+    }
+}
+
+.form-button {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: monospace;
+    padding: 15px 30px;
+}
+
+.form-button:hover {
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+
+/* footer */
+.footer-container {
+    background-color: whitesmoke;
+    margin: 5rem 0 0 0;
+    padding: 3rem;
+}
+
+.top-footer {
+    display: flex;
+}
+
+.footer-logo-container {
+    flex: 1;
+}
+.footer-logo {
+    width: 15%;
+}
+
+.footer-contact {
+    justify-items: flex-end;
+    flex: 1;
+}
+
+.bottom-footer {
+    text-align: center;
+    font-size: 70%;
+}
+
+/* ---------- PRODUCT PAGE ---------- */
+.product-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5rem 5%;
+}
+
+/* -- product cards -- */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding-left: 10rem;
+}
+
+@media (max-width: 1024px) {
+    .product-page {
+        flex-direction: column;
+    }
+
+    .product-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.product-card-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card-title, .price {
+    margin-left: 1rem;
+}
+
+.cart-btn {
+    background: whitesmoke;
+    border-width: 1px;
+    border-radius: 10px;
+    font-family: monospace;
+    margin: 1rem 1rem 1rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.product-card-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px 5px rgb(178, 178, 178); /* centered shadow with a 10px blur and a 5px radius in all directions */
+}
+
+.cart-btn:hover {
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+
+/* -- shopping filters -- */
+.filter-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .filter-layout {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.filter-form {
+    padding: 0 5rem;
+}
+
+.filter-form-title {
+    margin: 1rem;
+}
+
+.filter-form-filter {
+    margin-bottom: 1rem;
+}
+
+.filter-form-check {
+    margin-bottom: 1rem;
+}
+
+.indent {
+    margin-left: 2rem;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-logos {
+    width: 30%;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.contact-information {
+    flex: 1;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+#question {
+    height: 10rem;
+    vertical-align: top;
+}
+
+/* ---------- ABOUT ---------- */
+.about-info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+}
+
+@media (max-width: 1024px) {
+    .about-info {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
+
+.abt-img-container {
+    flex: 1;
+}
+
+.about-description {
+    flex: 1;
+    align-content: center;
+}
+
+.about-text {
+    font-size: 1.1rem;
+}
+
+.about-img {
+    margin-bottom: 3rem;
+    width: 50%;
+}
+
+.store {
+    margin-top: 7rem;
+}
+

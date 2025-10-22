@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mangata & Gallo</title>
+        <meta name="description" content="Mangata & Gallo Jewelry Atlier">
+        <meta name="author" content="Mangata & Gallo">
+
+        <link rel="icon" type="image/png" href="images/store/logo.png">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="company-logo">
+            <img class="logo" src="images/store/name.png" alt="mangata and gallo logo"/>
+        </header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="products.html">Products</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-col">
+                            <a class="dropdown-link" href="products.html">For Her</a>
+                            <a class="dropdown-link" href="products.html">For Him</a>
+                        </div>
+                        <div class="dropdown-col">
+                            <a class="dropdown-link" href="products.html">Engagement Rings</a>
+                            <a class="dropdown-link" href="products.html">Signature Rings</a>
+                            <a class="dropdown-link" href="products.html">Bracelets</a>
+                            <a class="dropdown-link" href="products.html">Necklaces</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section class="product-page">
+                <section class="filter-form">
+                    <form class="filters filter-layout">
+                        <h3 class="filter-form-title">Filters:</h3>
+                        <div class="filter-type filter-layout">
+                            <h4 class="filter-form-filter">Type:</h4>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_type" value="her"> For Her
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_type" value="him"> For Him
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_model" value="ring"> Rings
+                            </label>
+                            <label class="indent">
+                                <input class="filter-form-check" type="checkbox" name="filter_ring" value="signature"> Signature Rings
+                            </label>
+                            <label class="indent">
+                                <input class="filter-form-check" type="checkbox" name="filter_ring" value="engagement"> Engagement Rings
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_model" value="bracelet"> Bracelets
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_model" value="necklace"> Necklaces
+                            </label>
+                        </div>
+                        <div class="filter-color filter-layout">
+                            <h4 class="filter-form-filter">Color:</h4>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_color" value="gold"> Gold
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_color" value="silver"> Silver
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="checkbox" name="filter_color" value="rose-gold"> Rose Gold
+                            </label>
+                        </div>
+                        <div class="filter-price filter-layout">
+                            <h4 class="filter-form-filter">Price:</h4>
+                            <label>
+                                <input class="filter-form-check" type="radio" name="filter_price" value="100"> Under $100
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="radio" name="filter_price" value="300"> Under $300
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="radio" name="filter_price" value="500"> Under $500
+                            </label>
+                            <label>
+                                <input class="filter-form-check" type="radio" name="filter_price" value="700"> Under $700
+                            </label>
+                        </div>
+                    </form>
+                </section>
+                <section class="product-cards">
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/engagement-rings/gold_engagement.png" alt="gold engagement ring"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Engagment Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$559.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/engagement-rings/silver_engagement.png" alt="silver engagement ring"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Engagment Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$449.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/engagement-rings/silver_engagement_gem.png" alt="silver engagement ring"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Gem Engagment Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$500.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/aqua_gem_ring.png" alt="silver ring with an aqua gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Aqua Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$379.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/blue_gem_ring.png" alt="silver ring with an blue gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Blue Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$300.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/green_gem_ring.png" alt="silver ring with an green gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Green Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$100.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/pearl_ring.png" alt="silver ring with an pearl"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Pearl Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$229.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/pink_gem_ring.png" alt="silver ring with an pink gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Pink Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$300.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/pink_gem_rose_gold_ring.png" alt="rose gold ring with an pink gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Pink Gemstone Rose Gold Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$90.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-her/signature-rings/purple_gem_ring.png" alt="silver ring with an purple gemstone"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Purple Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$100.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/bracelets-her/rose_gold_bracelet_her.png" alt="rose gold bracelet with silver gems"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Rose Gold Bracelet</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$299.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/bracelets-her/silver_bracelet_her.png" alt="silver bracelet with a diamond with gems"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Bracelet</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$319.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-her/gold_heart_necklace_her.png" alt="gold heart necklace"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Heart Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$400.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-her/gold_silver_necklace_her.png" alt="gold necklace with a square gen and two smaller silver gems"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$459.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-her/silver_necklace_gem_her.png" alt="silver necklace with a circle gem"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Gemstone Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$350.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-her/silver_necklace_her.png" alt="silver necklace with three silver gems"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Gems Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$350.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-him/gold_ring_black_gem_him.png" alt="gold ring with black gem"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$419.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-him/gold_ring_him.png" alt="gold solid ring"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Solid Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$239.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-him/silver_ring_black_gem_him.png" alt="silver ring with black gem"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Gemstone Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$319.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/rings-him/silver_ring_him.png" alt="silver solid ring"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Solid Ring</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$219.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/bracelets-him/gold_bracelet_him.png" alt="gold bracelet"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Chain Bracelet</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$229.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/bracelets-him/silver_bracelet_him.png" alt="silver bracelet"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Chain Bracelet</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$199.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-him/gold_necklace_him.png" alt="gold chain necklace"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Gold Chain Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$459.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="product-card">
+                        <img class="product-card-img" src="images/necklaces-him/silver_necklace_him.png" alt="silver necklace with a rectangle pendant"/>
+                        <div class="product-card-body">
+                            <h4 class="product-card-title">Silver Pendant Necklace</h4>
+                            <div class="product-card-buy">
+                                <div class="price">$350.00</div>
+                                <div>
+                                    <button class="cart-btn">Cart</button>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer-container">
+            <div class="top-footer">
+                <div class="footer-logo-container">
+                    <img class="footer-logo" src="images/store/logo.png" alt="mangata and gallo logo"/>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-item">mangatagallo@email.com</div>
+                    <div class="contact-item">mangatagallo.com</div>
+                    <div class="contact-item">123-4567-890</div>
+                    <div class="contact-item">©mangatagallo</div>
+                </div>  
+            </div>
+            <div class="bottom-footer">
+                <div class="footer-notice">
+                    This website is <strong>solely for learning purposes</strong> as part of the Meta Front-End Developer Professional Certificate course on Coursera.<br>
+                    This is a <strong>fictional company</strong> and any information on this website is fictional!<br>
+                    Please note that all images on this webpage are <strong>AI generated</strong> by Gemini and ChatGPT.
+                </div>
+            </div>   
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
